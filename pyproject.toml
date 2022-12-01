@@ -16,3 +16,9 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+dependencies = [
+    "numpy",
+    "pandas",
+]
+
+
