@@ -9,9 +9,16 @@ dependencies = [
     "numpy",
     "pandas",
 ]
-
-# license
 license = {text = "BSD-3-Clause"}
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "setuptools_scm",
+    "flake8",
+    "black",
+]
 
 [build-system]
 requires = [
@@ -20,7 +27,25 @@ requires = [
     "setuptools_scm[toml]>=6.2",
 ]
 build-backend = "setuptools.build_meta"
+
 [tool.setuptools_scm]
 
+[tool.black]
+target-version = ['py38', 'py39', 'py310']
+skip-string-normalization = false
+line-length = 79
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | _build
+    | build
+    | dist
+  )/
+)
+'''
 
 
