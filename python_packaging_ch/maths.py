@@ -1,8 +1,15 @@
-def add_numbers(a: int | float, b: int | float) -> int | float:
+from typing import Union
+
+
+def add_numbers(
+    a: Union[int, float], b: Union[int, float]
+) -> Union[int, float]:
 
     return a + b
 
 
-def subtract_numbers(a: int | float, b: int | float) -> int | float:
+def subtract_numbers(
+    a: Union[int, float], b: Union[int, float]
+) -> Union[int, float]:
 
     return a - b
