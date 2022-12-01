@@ -8,6 +8,7 @@ dynamic = ["version"]
 dependencies = [
     "numpy",
     "pandas",
+    "fire",
 ]
 license = {text = "BSD-3-Clause"}
 
