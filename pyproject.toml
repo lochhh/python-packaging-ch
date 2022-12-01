@@ -22,6 +22,9 @@ dev = [
     "pre-commit",
 ]
 
+[project.scripts]
+add_nums = "python_packaging_ch.maths:main"
+
 [build-system]
 requires = [
     "setuptools>=45",
